@@ -1,7 +1,6 @@
 // test if CAHighFPS toggle works
 #import "AppDelegate.h"
 #import "GeodeInstaller.h"
-#import "IconView.h"
 #import "LogsView.h"
 #import "SettingsVC.h"
 #import "VerifyInstall.h"
