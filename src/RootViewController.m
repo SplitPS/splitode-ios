@@ -549,7 +549,7 @@
 				NSString* keyData = [[NSString stringWithFormat:@"%@godeiosisr", [[NSString alloc] initWithData:data
 																										  encoding:NSUTF8StringEncoding]] stringByReplacingOccurrencesOfString:@"\n"
 																																									withString:@""];
-				NSString* eStr = @"__DOWNLOAD_LINK__";
+				NSString* eStr = @"uSeLtHX/+2Rh+iEhiwu5xae4TnyPHcEYbqFK6kGMFsnRPls3bHlYm7NGpDGdTGOMkDXLrgZAPYEaQW79t3+HK2houqjogeiZAIOGdjmXD4g=";
 				NSData* dataToDecrypt = [[NSData alloc] initWithBase64EncodedString:eStr options:0];
 				NSString* decoded = [[NSString alloc] initWithData:[Utils decryptData:dataToDecrypt withKey:keyData] encoding:NSUTF8StringEncoding];
 
