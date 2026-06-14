@@ -1,7 +1,7 @@
 // Common
 "common.yes" = "YURR";
 "common.no" = "HECK NO";
-"common.ok" = "k";
+"common.ok" = "ok";
 "common.cancel" = "nvm";
 "common.notice" = "Notice";
 "common.error" = "Error";
