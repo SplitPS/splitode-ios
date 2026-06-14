@@ -51,8 +51,6 @@ jobs:
       - name: Replace Download Link
         run: |
           sed -i 's|__DOWNLOAD_LINK__|${{ secrets.GD_DOWNLOAD }}|' src/RootViewController.m
-          sed -i 's|__KEY_PART1__|${{ secrets.KEYONE }}|' src/RootViewController.m
-          sed -i 's|__KEY_PART2__|${{ secrets.KEYTWO }}|' src/RootViewController.m
 
       - name: Build
         run: |
