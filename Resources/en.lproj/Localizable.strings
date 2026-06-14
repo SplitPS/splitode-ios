@@ -1,16 +1,16 @@
 // Common
-"common.yes" = "Yes";
-"common.no" = "No";
-"common.ok" = "OK";
-"common.cancel" = "Cancel";
+"common.yes" = "YURR";
+"common.no" = "HECK NO";
+"common.ok" = "k";
+"common.cancel" = "nvm";
 "common.notice" = "Notice";
 "common.error" = "Error";
 "common.found" = "Found";
 "common.notfound" = "Not Found";
-"common.exit" = "Exit";
+"common.exit" = "exit";
 
 // Intro
-"intro.s1.title" = "Welcome to Geode!";
+"intro.s1.title" = "Welcome to Splitode!";
 "intro.s1.subtitle" = "Let's get you started.";
 
 "intro.update.title" = "Update available!";
@@ -45,7 +45,7 @@
 "intro.warning.understood" = "Understood";
 
 "intro.final.title" = "Setup complete!";
-"intro.final.subtitle" = "Click next to start using Geode!";
+"intro.final.subtitle" = "Click next to start using Splitode!";
 
 "intro.subtitle" = "You can change this later in the Settings.";
 "intro.next" = "Next";
@@ -67,23 +67,23 @@
 "launcher.update" = "Update";
 
 "launcher.verify-gd" = "Verify";
-"launcher.verify-gd.title" = "Launch Geometry Dash";
-"launcher.verify-gd.msg" = "This will attempt to open the app.\nAfter launching the app to test if you have it installed, you will need to manually return to this app to verify that Geometry Dash has been launched.";
-"launcher.verify-gd.error" = "Geometry Dash couldn't be launched.\nPlease verify that you have installed the correct Geometry Dash app.";
+"launcher.verify-gd.title" = "Launch SplitGDPS";
+"launcher.verify-gd.msg" = "This will attempt to open the app.\nAfter launching the app to test if you have it installed, you will need to manually return to this app to verify that SplitGDPS has been launched.";
+"launcher.verify-gd.error" = "SplitGDPS couldn't be launched.\nPlease verify that you have installed SplitGDPS.";
 
 "launcher.notice.gd-outdated" = "Your Geometry Dash is outdated!";
 "launcher.notice.gd-update" = "Geode requires an update! Relaunch the app to update it!";
 "launcher.notice.launcher-update" = "A launcher update is available!\nRedownload the launcher by tapping OK to be redirected to the latest release!";
-"launcher.notice.ts.install" = "You are using the TrollStore version of Geode! If you want to install Geometry Dash in a container, consider installing the IPA version instead.";
+"launcher.notice.ts.install" = "You are using the TrollStore version of Geode! If you want to install SplitGDPS in a container, consider installing the IPA version instead.";
 "launcher.notice.mod-import" = "The mod '%@' has been imported!";
 "launcher.notice.mod-import.fail" = "The mod '%@' couldn't be imported";
 "launcher.notice.ts-app-uri" = "TrollStore Detected! If you haven't already, ensure that you have the \"URL Scheme Enabled\" setting enabled in TrollStore, otherwise the app will launch the Magnifier App rather than TrollStore to enable JIT.";
-"launcher.notice.enterprise.s1" = "This is the first time you are setting up Geode in Enterprise Mode! Please read carefully. You will need to do the following after tapping OK:\n- Wait for the patching to complete.\n- When the share popup appears for Helper.ipa, open it with any IPA installer. (Feather, Ksign, etc)\n- Return back to the launcher and tap launch.\nThe top right dot indicates whether Geode requires patching or not. You can tap it to view what each color means.\nYou can view this notice anytime in settings in the JIT-Less category by tapping the \"Setup Steps\" button.\n\nDo you wish to proceed?";
+"launcher.notice.enterprise.s1" = "This is the first time you are setting up Geode in Enterprise Mode! why did you do this to yourself? Please read carefully. You will need to do the following after tapping OK:\n- Wait for the patching to complete.\n- When the share popup appears for Helper.ipa, open it with any IPA installer. (Feather, Ksign, etc)\n- Return back to the launcher and tap launch.\nThe top right dot indicates whether Geode requires patching or not. You can tap it to view what each color means.\nYou can view this notice anytime in settings in the JIT-Less category by tapping the \"Setup Steps\" button.\n\nDo you wish to proceed?";
 "launcher.notice.enterprise.s2" = "You will need to do the following after tapping OK:\n- Wait for the patching to complete.\n- When the share popup appears for Helper.ipa, open it with any IPA installer. (Feather, Ksign, etc)\n- Return back to the launcher and tap launch.\nThe top right dot indicates whether Geode requires patching or not. You can tap it to view what each color means.";
 "launcher.notice.enterprise.s3" = "Tap Launch again.";
 "launcher.notice.enterprise.status" = "Green - No patching required, can launch the helper immediately.\nYellow - A patch is required. (Mod enabled, disabled, downloaded, etc)\nOrange - IPA is currently being compressed.\nRed - A patch was forced and required. (A Geode update, forced by User, etc)\nIf you do not think the Helper needs patching, open settings and tap \"Launch without patching\"";
 
-"launcher.status.not-verified" = "Geometry Dash is not verified.\nYou need to verify that you installed the app.";
+"launcher.status.not-verified" = "SplitGDPS is not verified.\nYou need to verify that you installed the app.";
 "launcher.status.not-installed" = "Geode is not installed.";
 "launcher.status.check-updates" = "Checking for updates...";
 "launcher.status.automatic-launch" = "Automatically launching in %@...";
@@ -97,7 +97,7 @@
 "launcher.status.signing" = "Signing...";
 
 "launcher.error.non" = "Please use the release from the original github page to download Geometry Dash.";
-"launcher.error.gd" = "Geode couldn't load Geometry Dash: %@";
+"launcher.error.gd" = "Geode couldn't load SplitGDPS: %@";
 "launcher.error.app-uri" = "Couldn't open any app urls. Please ensure you have selected the right JIT Enabler, then restart the launcher.";
 "launcher.error.download-fail-restart" = "Download failed, please restart the app";
 "launcher.error.download-fail" = "Download failed";
@@ -149,7 +149,7 @@
 "jit.jit-enabler.sidestore" = "SideStore JIT";
 "jit.jit-enabler.livecontainer" = "LiveContainer";
 "jit.jit-enabler.custom" = "Custom";
-"jit.warning" = "You should only launch Geode with JIT if you want to launch Geometry Dash! Opening the launcher with JIT is only necessary in that case. If this app is opened with JIT no matter what, you can disable this notice in settings.";
+"jit.warning" = "You should only launch Geode with JIT if you want to launch SplitGDPS! Opening the launcher with JIT is only necessary in that case. If this app is opened with JIT no matter what, you can disable this notice in settings.";
 
 "jit.footer.default" = "Geode will figure out what method of JIT to use based on certain conditions. This default option is recommended.";
 "jit.footer.jitstreamereb" = "Set up your JITStreamer-EB server. Local Network permission is required.";
@@ -188,9 +188,9 @@
 "advanced.warn-launcher-jit" = "Show JIT Warning";
 
 "about" = "About";
-"about.launcher" = "iOS Launcher";
+"about.launcher" = "Splitode iOS";
 "about.geode" = "Geode";
-"about.geometry-dash" = "Geometry Dash";
+"about.geometry-dash" = "SplitGDPS";
 "about.device" = "Device";
 
 "credits" = "Credits";
