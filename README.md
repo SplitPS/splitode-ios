@@ -1,5 +1,5 @@
 # Geode iOS Launcher
-Manages installing and launching **Geometry Dash** with **Geode** for iOS.
+Manages installing and launching **SplitGDPS** with **Geode** for iOS.
 
 <p align="center">
 	<img src="/screenshots/thumbnail.png" />
@@ -7,11 +7,11 @@ Manages installing and launching **Geometry Dash** with **Geode** for iOS.
 
 ## Requirements
 - iOS/iPadOS 14.0 or later
-- Full version of Geometry Dash installed
+- SplitGDPS installed
 - An internet connection
 
 ## Quick Start
-1. Navigate to https://github.com/geode-sdk/ios-launcher/releases/latest, if you are not **jailbroken**, download the latest **ipa** file. If you wish to use the tweak and have **TrollStore**, download the latest **tipa** file.
+1. Navigate to https://github.com/SplitPS/splitode-ios/releases/latest, if you are not **jailbroken**, download the latest **ipa** file. If you wish to use the tweak and have **TrollStore**, download the latest **tipa** file.
 2. Install the launcher by following the [Installation Guide](./INSTALL.md). You can also access this guide by going in to the **INSTALL.md** file in this repository.
 3. Enjoy using Geode!
 
