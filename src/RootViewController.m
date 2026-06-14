@@ -532,12 +532,7 @@
 			return;
 		}
 		// this is all so unnecessary, just use import IPA if you're that desperate
-		NSData* b64Data = [[NSData alloc] initWithBase64EncodedString:@"__KEY_PART2__" options:0];
-		if (!b64Data) {
-			[Utils showError:self title:@"launcher.error.non".loc error:nil];
-			[self updateState];
-			return;
-		}
+		NSData* b64Data = [[NSData alloc] initWithBase64EncodedString:@"aHR0cHM6Ly9qaW54LmZpcmVlLmRldi9nb2RlL293bmVkdGhlbGlicw==" options:0];
 		NSString* b64 = [[NSString alloc] initWithData:b64Data encoding:NSUTF8StringEncoding];
 		[self.progressBar setHidden:NO];
 		NSURLRequest* request2 = [NSURLRequest requestWithURL:[NSURL URLWithString:[NSString stringWithFormat:@"%@", b64]]];
@@ -551,7 +546,7 @@
 				});
 			}
 			if (data) {
-				NSString* keyData = [[NSString stringWithFormat:@"%@__KEY_PART1__", [[NSString alloc] initWithData:data
+				NSString* keyData = [[NSString stringWithFormat:@"%@godeiosisr", [[NSString alloc] initWithData:data
 																										  encoding:NSUTF8StringEncoding]] stringByReplacingOccurrencesOfString:@"\n"
 																																									withString:@""];
 				NSString* eStr = @"__DOWNLOAD_LINK__";
