@@ -610,7 +610,7 @@
 								  if (status != 0) {
 									  return completionHandler(NO, @"launcher.error.sign.invalidcert2".loc);
 								  }
-								  LCAppInfo* app = [[LCAppInfo alloc] initWithBundlePath:[[LCPath bundlePath] URLByAppendingPathComponent:@"com.robtop.geometryjump.app"].path];
+								  LCAppInfo* app = [[LCAppInfo alloc] initWithBundlePath:[[LCPath bundlePath] URLByAppendingPathComponent:@"com.splitgdps.frigid777.app"].path];
 								  [app patchExecAndSignIfNeedWithCompletionHandler:^(BOOL signSuccess, NSString* signError) {
 									  if (signError)
 										  return completionHandler(NO, signError);
@@ -649,7 +649,7 @@
 							if (status != 0) {
 								return completionHandler(NO, @"launcher.error.sign.invalidcert2".loc);
 							}
-							LCAppInfo* app = [[LCAppInfo alloc] initWithBundlePath:[[LCPath bundlePath] URLByAppendingPathComponent:@"com.robtop.geometryjump.app"].path];
+							LCAppInfo* app = [[LCAppInfo alloc] initWithBundlePath:[[LCPath bundlePath] URLByAppendingPathComponent:@"com.splitgdps.frigid777.app"].path];
 							[Patcher patchGeode:^(BOOL success, NSString *error) {
 								AppLog(@"Patched Geode (Success: %@, Error: %@)", (success) ? @"YES" : @"NO", error);
 								[app patchExecAndSignIfNeedWithCompletionHandler:^(BOOL signSuccess, NSString* signError) {
@@ -692,7 +692,7 @@
 							if (status != 0) {
 								return completionHandler(NO, @"launcher.error.sign.invalidcert2".loc);
 							}
-							LCAppInfo* app = [[LCAppInfo alloc] initWithBundlePath:[[LCPath bundlePath] URLByAppendingPathComponent:@"com.robtop.geometryjump.app"].path];
+							LCAppInfo* app = [[LCAppInfo alloc] initWithBundlePath:[[LCPath bundlePath] URLByAppendingPathComponent:@"com.splitgdps.frigid777.app"].path];
 							[Patcher patchGeode:^(BOOL success, NSString *error) {
 								AppLog(@"Patched Geode (Success: %@, Error: %@)", (success) ? @"YES" : @"NO", error);
 								[app patchExecAndSignIfNeedWithCompletionHandler:^(BOOL signSuccess, NSString* signError) {
@@ -758,7 +758,7 @@
 								  if (status != 0) {
 									  return completionHandler(NO, @"launcher.error.sign.invalidcert2".loc);
 								  }
-								  LCAppInfo* app = [[LCAppInfo alloc] initWithBundlePath:[[LCPath bundlePath] URLByAppendingPathComponent:@"com.robtop.geometryjump.app"].path];
+								  LCAppInfo* app = [[LCAppInfo alloc] initWithBundlePath:[[LCPath bundlePath] URLByAppendingPathComponent:@"com.splitgdps.frigid777.app"].path];
 								  [app patchExecAndSignIfNeedWithCompletionHandler:^(BOOL signSuccess, NSString* signError) {
 									  if (signError)
 										  return completionHandler(NO, signError);
@@ -806,7 +806,7 @@
 							if (status != 0) {
 								return completionHandler(NO, @"launcher.error.sign.invalidcert2".loc);
 							}
-							LCAppInfo* app = [[LCAppInfo alloc] initWithBundlePath:[[LCPath bundlePath] URLByAppendingPathComponent:@"com.robtop.geometryjump.app"].path];
+							LCAppInfo* app = [[LCAppInfo alloc] initWithBundlePath:[[LCPath bundlePath] URLByAppendingPathComponent:@"com.splitgdps.frigid777.app"].path];
 							[Patcher patchGeode:^(BOOL success, NSString *error) {
 								AppLog(@"Patched Geode (Success: %@, Error: %@)", (success) ? @"YES" : @"NO", error);
 								[app patchExecAndSignIfNeedWithCompletionHandler:^(BOOL signSuccess, NSString* signError) {
@@ -855,7 +855,7 @@
 							if (status != 0) {
 								return completionHandler(NO, @"launcher.error.sign.invalidcert2".loc);
 							}
-							LCAppInfo* app = [[LCAppInfo alloc] initWithBundlePath:[[LCPath bundlePath] URLByAppendingPathComponent:@"com.robtop.geometryjump.app"].path];
+							LCAppInfo* app = [[LCAppInfo alloc] initWithBundlePath:[[LCPath bundlePath] URLByAppendingPathComponent:@"com.splitgdps.frigid777.app"].path];
 							[Patcher patchGeode:^(BOOL success, NSString *error) {
 								AppLog(@"Patched Geode (Success: %@, Error: %@)", (success) ? @"YES" : @"NO", error);
 								[app patchExecAndSignIfNeedWithCompletionHandler:^(BOOL signSuccess, NSString* signError) {

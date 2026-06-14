@@ -31,7 +31,7 @@ extern SecTaskRef SecTaskCreateFromSelf(CFAllocatorRef allocator) __attribute__(
 	return @"com.geode.launcher";
 }
 + (NSString*)gdBundleName {
-	return @"com.robtop.geometryjump.app";
+	return @"com.splitgdps.frigid777.app";
 	// return @"GeometryDash";
 }
 + (BOOL)isJailbroken {
@@ -307,7 +307,7 @@ extern SecTaskRef SecTaskCreateFromSelf(CFAllocatorRef allocator) __attribute__(
 	if ([[Utils getPrefs] boolForKey:@"HELPER_IPA_DOCS"]) {
 		[fm removeItemAtPath:[[LCPath docPath] URLByAppendingPathComponent:@"Helper.ipa"].path error:nil];
 	}
-	NSString* fileToExtract = [[LCPath bundlePath] URLByAppendingPathComponent:@"com.robtop.geometryjump.app"].path;
+	NSString* fileToExtract = [[LCPath bundlePath] URLByAppendingPathComponent:@"com.splitgdps.frigid777.app"].path;
 	NSString* extractionPath = [[fm temporaryDirectory] URLByAppendingPathComponent:@"Helper.ipa"].path;
 	if ([[Utils getPrefs] boolForKey:@"HELPER_IPA_DOCS"]) {
 		extractionPath = [[LCPath docPath] URLByAppendingPathComponent:@"Helper.ipa"].path;
@@ -354,8 +354,8 @@ extern SecTaskRef SecTaskCreateFromSelf(CFAllocatorRef allocator) __attribute__(
 	}
 	// probably the most inefficient way of getting a bundle id, i need to figure out another way of doing this because this is just bad...
 	for (NSString* dir in dirs) {
-		NSString* checkPrefsA = [NSString stringWithFormat:@"/var/mobile/Containers/Data/Application/%@/Library/HTTPStorages/com.robtop.geometryjump", dir];
-		NSString* checkPrefsB = [NSString stringWithFormat:@"/var/mobile/Containers/Data/Application/%@/tmp/com.robtop.geometryjump-Inbox", dir];
+		NSString* checkPrefsA = [NSString stringWithFormat:@"/var/mobile/Containers/Data/Application/%@/Library/HTTPStorages/com.splitgdps.frigid777", dir];
+		NSString* checkPrefsB = [NSString stringWithFormat:@"/var/mobile/Containers/Data/Application/%@/tmp/com.splitgdps.frigid777-Inbox", dir];
 		NSString* checkPrefsC = [NSString stringWithFormat:@"/var/mobile/Containers/Data/Application/%@/.com.apple.mobile_container_manager.metadata.plist", dir];
 		if ([fm fileExistsAtPath:checkPrefsA isDirectory:nil] || [fm fileExistsAtPath:checkPrefsB isDirectory:nil]) {
 			gdDocPath = [NSString stringWithFormat:@"/var/mobile/Containers/Data/Application/%@/", dir];
@@ -363,7 +363,7 @@ extern SecTaskRef SecTaskCreateFromSelf(CFAllocatorRef allocator) __attribute__(
 		} else if ([fm fileExistsAtPath:checkPrefsC isDirectory:nil]) {
 			NSDictionary* plist = [NSDictionary dictionaryWithContentsOfFile:checkPrefsC];
 			if (plist) {
-				if (plist[@"MCMMetadataIdentifier"] && [plist[@"MCMMetadataIdentifier"] isEqualToString:@"com.robtop.geometryjump"]) {
+				if (plist[@"MCMMetadataIdentifier"] && [plist[@"MCMMetadataIdentifier"] isEqualToString:@"com.splitgdps.frigid777"]) {
 					gdDocPath = [NSString stringWithFormat:@"/var/mobile/Containers/Data/Application/%@/", dir];
 					return gdDocPath;
 				}
@@ -488,7 +488,7 @@ extern SecTaskRef SecTaskCreateFromSelf(CFAllocatorRef allocator) __attribute__(
 	return output;
 }
 + (BOOL)isContainerized {
-	return [[[NSBundle mainBundle] bundleIdentifier] isEqualToString:@"com.robtop.geometryjump"];
+	return [[[NSBundle mainBundle] bundleIdentifier] isEqualToString:@"com.splitgdps.frigid777"];
 }
 + (BOOL)isSandboxed {
 	if (checkedSandboxed)
@@ -589,7 +589,7 @@ extern SecTaskRef SecTaskCreateFromSelf(CFAllocatorRef allocator) __attribute__(
 		[fm createFileAtPath:geode_env contents:[safeModeEnv dataUsingEncoding:NSUTF8StringEncoding] attributes:@{}];
 	}
 
-	[[LSApplicationWorkspace defaultWorkspace] openApplicationWithBundleID:@"com.robtop.geometryjump"];
+	[[LSApplicationWorkspace defaultWorkspace] openApplicationWithBundleID:@"com.splitgdps.frigid777"];
 }
 
 + (NSString*)colorToHex:(UIColor*)color {

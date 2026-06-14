@@ -852,7 +852,7 @@ int GeodeMain(int argc, char* argv[]) {
 										return;
 									}
 									AppLog(@"Sign (2/3)");
-									LCAppInfo* app = [[LCAppInfo alloc] initWithBundlePath:[[LCPath bundlePath] URLByAppendingPathComponent:@"com.robtop.geometryjump.app"].path];
+									LCAppInfo* app = [[LCAppInfo alloc] initWithBundlePath:[[LCPath bundlePath] URLByAppendingPathComponent:@"com.splitgdps.frigid777.app"].path];
 									[app patchExecAndSignIfNeedWithCompletionHandler:^(BOOL signSuccess, NSString* signError) {
 										AppLog(@"Sign (3/3)");
 										if (signError) {

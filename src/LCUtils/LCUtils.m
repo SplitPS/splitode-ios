@@ -70,7 +70,7 @@ Class LCSharedUtilsClass = nil;
 	if ([[Utils getPrefs] boolForKey:@"MANUAL_REOPEN"])
 		return NO;
 	if (![Utils isSandboxed]) {
-		NSString* appBundleIdentifier = @"com.robtop.geometryjump";
+		NSString* appBundleIdentifier = @"com.splitgdps.frigid777";
 		[[LSApplicationWorkspace defaultWorkspace] openApplicationWithBundleID:appBundleIdentifier];
 		return YES;
 	}
@@ -152,8 +152,8 @@ Class LCSharedUtilsClass = nil;
 	}
 
 	NSFileManager* fm = [NSFileManager defaultManager];
-	NSURL* justIncase = [[LCPath bundlePath] URLByAppendingPathComponent:@"com.robtop.geometryjump.app"];
-	NSURL* bundleProvision = [[LCPath bundlePath] URLByAppendingPathComponent:@"com.robtop.geometryjump.app/embedded.mobileprovision"];
+	NSURL* justIncase = [[LCPath bundlePath] URLByAppendingPathComponent:@"com.splitgdps.frigid777.app"];
+	NSURL* bundleProvision = [[LCPath bundlePath] URLByAppendingPathComponent:@"com.splitgdps.frigid777.app/embedded.mobileprovision"];
 	NSURL* provisionURL = [[LCPath docPath] URLByAppendingPathComponent:@"embedded.mobileprovision"];
 	if ([[NSFileManager defaultManager] fileExistsAtPath:provisionURL.path]) {
 		AppLog(@"Found provision in documents, copying to GD bundle...");
