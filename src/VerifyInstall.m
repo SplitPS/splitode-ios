@@ -172,6 +172,7 @@ BOOL hasDoneUpdate = NO;
 				}
 			}
 			// Move it!
+			error = nil;
 			[fm moveItemAtURL:appFolderPath toURL:outputFolder error:&error];
 			if (error) {
 				return dispatch_async(dispatch_get_main_queue(), ^{
