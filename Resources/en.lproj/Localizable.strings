@@ -22,26 +22,26 @@
 
 "intro.s3.title" = "Installation Method";
 "intro.s3.option1.title" = "Normal (Recommended)";
-"intro.s3.option1.subtitle" = "This method works between all iOS devices, jailbroken or not. However, you will have to launch the app with JIT every time you want to open Geode.";
+"intro.s3.option1.subtitle" = "This method works between all iOS devices, jailbroken or not. However, you will have to launch the app with JIT every time you want to open Splitode.";
 "intro.s3.option2.title" = "Tweak";
-"intro.s3.option2.subtitle" = "Recommended for Jailbreak users. This injects Geode directly into Geometry Dash. However, Geode will not appear once you're unjailbroken.\nIt's recommended to install the TrollStore (.tipa) version of this launcher if you plan on using this.";
+"intro.s3.option2.subtitle" = "Recommended for Jailbreak users. This injects Splitode directly into SplitGDPS. However, Splitode will not appear once you're unjailbroken.\nIt's recommended to install the TrollStore (.tipa) version of this launcher if you plan on using this.";
 "intro.s3.option1.warning" = "You are using the TrollStore version of the launcher! Please note that launching with JIT may not work.\nIt's recommended to relaunch the app and install the tweak instead!";
 
 "intro.s4.title" = "Launch Method";
 "intro.s4.option1.title" = "JIT-Less (Recommended)";
 "intro.s4.option1.subtitle" = "This method requires patching AltStore/SideStore, or importing a certificate if you didn't sideload this app with those stores. Note that launching may take longer, and restarting sometimes may not work.";
 "intro.s4.option2.title" = "JIT";
-"intro.s4.option2.subtitle" = "This method requires you to run Geode with JIT everytime, or use a JITStreamer-EB instance (with Auto JIT or not). This method is more stable, however it requires an internet connection each time you want to launch Geometry Dash.";
+"intro.s4.option2.subtitle" = "This method requires you to run Splitode with JIT everytime, or use a JITStreamer-EB instance (with Auto JIT or not). This method is more stable, however it requires an internet connection each time you want to launch SplitGDPS.";
 
 "intro.s5.title" = "Choose Jailbreak Store";
 "intro.s5.subtitle" = "If yours isn't listed, you can click the 'Share' button\nto open the repo link.";
 "intro.s5.openin" = "Open in\n%@";
 
 "intro.warning.title" = "Warning";
-"intro.warning.subtitle1" = "If you are not jailbroken or don't have TrollStore, you will need a Computer to set up JIT; specifically for the pairing profile. JIT is required for Geode, otherwise you can use JIT-Less mode if you can import a certificate (in settings), and don't own a computer.\n\nPlease view the guide for more information, and refrain from asking about this.";
-"intro.warning.subtitle2" = "You have sideloaded Geode with an Enterprise Certificate (Free Certificate), or a certificate with no entitlements. Please ensure that you have signed Geode with the correct certificate when installing it, otherwise you will be forced to use the time consuming \"Enterprise Mode\"\n\nIt is strongly recommended to read the guide.";
-"intro.warning.subtitle3" = "Geode has detected your version to be iOS 26+. Since you have StikDebug, you will need to enable the following settings in it: \"Always Run Script\" and \"Picture in Picture\". After doing that, you can proceed with launching Geode. If you are having problems, enable the JIT-Less mode in settings.\n\nPlease view the guide for more information.";
-"intro.warning.subtitle4" = "You have sideloaded Geode with TrollStore. In order for Geode to launch to Geometry Dash, you must open TrollStore, tap Settings, and enable \"URL Scheme Enabled\" for Geode to launch to TrollStore. Do these steps before continuing.";
+"intro.warning.subtitle1" = "If you are not jailbroken or don't have TrollStore, you will need a Computer to set up JIT; specifically for the pairing profile. JIT is required for Splitode, otherwise you can use JIT-Less mode if you can import a certificate (in settings), and don't own a computer.\n\nPlease view the guide for more information, and refrain from asking about this.";
+"intro.warning.subtitle2" = "You have sideloaded Splitode with an Enterprise Certificate (Free Certificate), or a certificate with no entitlements. Please ensure that you have signed Splitode with the correct certificate when installing it, otherwise you will be forced to use the time consuming \"Enterprise Mode\"\n\nIt is strongly recommended to read the guide.";
+"intro.warning.subtitle3" = "Splitode has detected your version to be iOS 26+. Since you have StikDebug, you will need to enable the following settings in it: \"Always Run Script\" and \"Picture in Picture\". After doing that, you can proceed with launching Splitode. If you are having problems, enable the JIT-Less mode in settings.\n\nPlease view the guide for more information.";
+"intro.warning.subtitle4" = "You have sideloaded Splitode with TrollStore. In order for Splitode to launch to SplitGDPS, you must open TrollStore, tap Settings, and enable \"URL Scheme Enabled\" for Splitode to launch to TrollStore. Do these steps before continuing.";
 "intro.warning.understood" = "Understood";
 
 "intro.final.title" = "Setup complete!";
@@ -61,8 +61,8 @@
 
 // Main Screen
 "launcher.launch" = "Launch";
-"launcher.relaunch-notice" = "Relaunch the app with JIT to start Geode!";
-"launcher.relaunch-notice.lc" = "Relaunch the app in LiveContainer to start Geode!";
+"launcher.relaunch-notice" = "Relaunch the app with JIT to start Splitode!";
+"launcher.relaunch-notice.lc" = "Relaunch the app in LiveContainer to start Splitode!";
 "launcher.download" = "Download";
 "launcher.update" = "Update";
 
@@ -71,33 +71,33 @@
 "launcher.verify-gd.msg" = "This will attempt to open the app.\nAfter launching the app to test if you have it installed, you will need to manually return to this app to verify that SplitGDPS has been launched.";
 "launcher.verify-gd.error" = "SplitGDPS couldn't be launched.\nPlease verify that you have installed SplitGDPS.";
 
-"launcher.notice.gd-outdated" = "Your Geometry Dash is outdated!";
-"launcher.notice.gd-update" = "Geode requires an update! Relaunch the app to update it!";
+"launcher.notice.gd-outdated" = "Your SplitGDPS is outdated!";
+"launcher.notice.gd-update" = "Splitode requires an update! Relaunch the app to update it!";
 "launcher.notice.launcher-update" = "A launcher update is available!\nRedownload the launcher by tapping OK to be redirected to the latest release!";
-"launcher.notice.ts.install" = "You are using the TrollStore version of Geode! If you want to install SplitGDPS in a container, consider installing the IPA version instead.";
+"launcher.notice.ts.install" = "You are using the TrollStore version of Splitode! If you want to install SplitGDPS in a container, consider installing the IPA version instead.";
 "launcher.notice.mod-import" = "The mod '%@' has been imported!";
 "launcher.notice.mod-import.fail" = "The mod '%@' couldn't be imported";
 "launcher.notice.ts-app-uri" = "TrollStore Detected! If you haven't already, ensure that you have the \"URL Scheme Enabled\" setting enabled in TrollStore, otherwise the app will launch the Magnifier App rather than TrollStore to enable JIT.";
-"launcher.notice.enterprise.s1" = "This is the first time you are setting up Geode in Enterprise Mode! why did you do this to yourself? Please read carefully. You will need to do the following after tapping OK:\n- Wait for the patching to complete.\n- When the share popup appears for Helper.ipa, open it with any IPA installer. (Feather, Ksign, etc)\n- Return back to the launcher and tap launch.\nThe top right dot indicates whether Geode requires patching or not. You can tap it to view what each color means.\nYou can view this notice anytime in settings in the JIT-Less category by tapping the \"Setup Steps\" button.\n\nDo you wish to proceed?";
-"launcher.notice.enterprise.s2" = "You will need to do the following after tapping OK:\n- Wait for the patching to complete.\n- When the share popup appears for Helper.ipa, open it with any IPA installer. (Feather, Ksign, etc)\n- Return back to the launcher and tap launch.\nThe top right dot indicates whether Geode requires patching or not. You can tap it to view what each color means.";
+"launcher.notice.enterprise.s1" = "This is the first time you are setting up Splitode in Enterprise Mode! why did you do this to yourself? Please read carefully. You will need to do the following after tapping OK:\n- Wait for the patching to complete.\n- When the share popup appears for Helper.ipa, open it with any IPA installer. (Feather, Ksign, etc)\n- Return back to the launcher and tap launch.\nThe top right dot indicates whether Splitode requires patching or not. You can tap it to view what each color means.\nYou can view this notice anytime in settings in the JIT-Less category by tapping the \"Setup Steps\" button.\n\nDo you wish to proceed?";
+"launcher.notice.enterprise.s2" = "You will need to do the following after tapping OK:\n- Wait for the patching to complete.\n- When the share popup appears for Helper.ipa, open it with any IPA installer. (Feather, Ksign, etc)\n- Return back to the launcher and tap launch.\nThe top right dot indicates whether Splitode requires patching or not. You can tap it to view what each color means.";
 "launcher.notice.enterprise.s3" = "Tap Launch again.";
-"launcher.notice.enterprise.status" = "Green - No patching required, can launch the helper immediately.\nYellow - A patch is required. (Mod enabled, disabled, downloaded, etc)\nOrange - IPA is currently being compressed.\nRed - A patch was forced and required. (A Geode update, forced by User, etc)\nIf you do not think the Helper needs patching, open settings and tap \"Launch without patching\"";
+"launcher.notice.enterprise.status" = "Green - No patching required, can launch the helper immediately.\nYellow - A patch is required. (Mod enabled, disabled, downloaded, etc)\nOrange - IPA is currently being compressed.\nRed - A patch was forced and required. (A Splitode update, forced by User, etc)\nIf you do not think the Helper needs patching, open settings and tap \"Launch without patching\"";
 
 "launcher.status.not-verified" = "SplitGDPS is not verified.\nYou need to verify that you installed the app.";
-"launcher.status.not-installed" = "Geode is not installed.";
+"launcher.status.not-installed" = "Splitode is not installed.";
 "launcher.status.check-updates" = "Checking for updates...";
 "launcher.status.automatic-launch" = "Automatically launching in %@...";
 "launcher.status.automatic-launch.end" = "Launching...";
 "launcher.status.getting-ver" = "Getting current version...";
 "launcher.status.update-available" = "Update available!";
-"launcher.status.download-geode" = "Downloading Geode...";
+"launcher.status.download-Splitode" = "Downloading Splitode...";
 "launcher.status.download-resources" = "Downloading Resources...";
 "launcher.status.extracting" = "Extracting...";
 "launcher.status.patching" = "Patching...";
 "launcher.status.signing" = "Signing...";
 
-"launcher.error.non" = "Please use the release from the original github page to download Geometry Dash.";
-"launcher.error.gd" = "Geode couldn't load SplitGDPS: %@";
+"launcher.error.non" = "Please use the release from the original github page to download SplitGDPS.";
+"launcher.error.gd" = "Splitode couldn't load SplitGDPS: %@";
 "launcher.error.app-uri" = "Couldn't open any app urls. Please ensure you have selected the right JIT Enabler, then restart the launcher.";
 "launcher.error.download-fail-restart" = "Download failed, please restart the app";
 "launcher.error.download-fail" = "Download failed";
@@ -108,8 +108,8 @@
 "launcher.error.sign.invalidcert" = "Couldn't validate certificate: %@";
 "launcher.error.sign.invalidcert2" = "Certificate Status Invalid";
 "launcher.error.sign.invalidcert3" = "Invalid Certificate Data";
-"launcher.error.patch.origsign" = "The original binary had been signed! Please reinstall Geometry Dash.";
-"launcher.error.enterprise-launch" = "Geode Helper couldn't be launched.\nPlease verify that you have installed the Helper.";
+"launcher.error.patch.origsign" = "The original binary had been signed! Please reinstall SplitGDPS.";
+"launcher.error.enterprise-launch" = "Splitode Helper couldn't be launched.\nPlease verify that you have installed the Helper.";
 
 "launcher.progress.download.text" = "Downloading... {percent}%";
 "launcher.progress.extract.text" = "Extracting... {percent}%";
@@ -122,7 +122,7 @@
 "general.open-fm" = "Open File Manager";
 "general.enable-updates" = "Enable Automatic Updates";
 "general.check-updates" = "Check for Updates";
-"general.check-updates.error" = "You do not have Geode installed!";
+"general.check-updates.error" = "You do not have Splitode installed!";
 "general.footer" = "Current loader version: %@";
 "general.theme" = "Theme";
 "general.theme.system" = "System";
@@ -149,37 +149,37 @@
 "jit.jit-enabler.sidestore" = "SideStore JIT";
 "jit.jit-enabler.livecontainer" = "LiveContainer";
 "jit.jit-enabler.custom" = "Custom";
-"jit.warning" = "You should only launch Geode with JIT if you want to launch SplitGDPS! Opening the launcher with JIT is only necessary in that case. If this app is opened with JIT no matter what, you can disable this notice in settings.";
+"jit.warning" = "You should only launch Splitode with JIT if you want to launch SplitGDPS! Opening the launcher with JIT is only necessary in that case. If this app is opened with JIT no matter what, you can disable this notice in settings.";
 
-"jit.footer.default" = "Geode will figure out what method of JIT to use based on certain conditions. This default option is recommended.";
+"jit.footer.default" = "Splitode will figure out what method of JIT to use based on certain conditions. This default option is recommended.";
 "jit.footer.jitstreamereb" = "Set up your JITStreamer-EB server. Local Network permission is required.";
 "jit.footer.sidejit" = "Set up your SideJITServer/JITStreamer server. Local Network permission is required. Use this only if you cannot use JITStreamer-EB.";
-"jit.footer.stikjit" = "Geode will open StikJIT when launched to enable JIT.";
-"jit.footer.trollstore" = "Geode will utilize TrollStore to enable JIT. Make sure you enable the \"URL Scheme Enabled\" setting in TrollStore, otherwise Geode will open the Apple Magnifier app.";
-"jit.footer.sidestore" = "Geode will open SideStore when launched to enable JIT.";
-"jit.footer.livecontainer" = "Ensure that you enabled \"Launch with JIT\" for the Geode app in LiveContainer.";
+"jit.footer.stikjit" = "Splitode will open StikJIT when launched to enable JIT.";
+"jit.footer.trollstore" = "Splitode will utilize TrollStore to enable JIT. Make sure you enable the \"URL Scheme Enabled\" setting in TrollStore, otherwise Splitode will open the Apple Magnifier app.";
+"jit.footer.sidestore" = "Splitode will open SideStore when launched to enable JIT.";
+"jit.footer.livecontainer" = "Ensure that you enabled \"Launch with JIT\" for the Splitode app in LiveContainer.";
 
 "jitless" = "JIT-Less";
 "jitless.enterprise" = "Enterprise Mode";
 "jitless.enable" = "Enable JIT-Less";
 "jitless.diag" = "JIT-Less Diagnose";
-"jitless.footer" = "JIT-less allows you to use Geode without enabling JIT! You will need to import a certificate.";
+"jitless.footer" = "JIT-less allows you to use Splitode without enabling JIT! You will need to import a certificate.";
 "jitless.certstatus" = "Certificate Status";
 "jitless.certstatus.valid" = "Valid (%ld days)";
 "jitless.certstatus.expired" = "Expired (%ld days)";
 "jitless.certstatus.invalid" = "Invalid / Revoked";
 "jitless.certstatus.notimport" = "Not Imported";
 "jitless.cert.readerror" = "Couldn't read certificate.";
-"jitless.cert.invalidcert" = "Couldn't validate certificate. Please ensure the password is correct, the certificate was used to sign this app, and that the certificate is not revoked.\nIf you enabled an option to remove the mobile provision file, please disable it and resign the app, or copy it to the Documents folder for Geode as \"embedded.mobileprovision\".";
-"jitless.cert.dev-cert.unused" = "Certificate Imported! However, Geode will not work as it was signed without the \"get-task-allow\" entitlement. You must use a Development Certificate, or Geode will not load.";
-"jitless.cert.dev-cert" = "Application signed without the \"get-task-allow\" entitlement. You must use a Development Certificate with that entitlement for Geode. Use the \"Enterprise Mode\" if you want to still use Geode without a Development Certificate.\nYou can verify if Geode was signed with the entitlement by seeing if it's visible in an app like StikDebug.";
+"jitless.cert.invalidcert" = "Couldn't validate certificate. Please ensure the password is correct, the certificate was used to sign this app, and that the certificate is not revoked.\nIf you enabled an option to remove the mobile provision file, please disable it and resign the app, or copy it to the Documents folder for Splitode as \"embedded.mobileprovision\".";
+"jitless.cert.dev-cert.unused" = "Certificate Imported! However, Splitode will not work as it was signed without the \"get-task-allow\" entitlement. You must use a Development Certificate, or Splitode will not load.";
+"jitless.cert.dev-cert" = "Application signed without the \"get-task-allow\" entitlement. You must use a Development Certificate with that entitlement for Splitode. Use the \"Enterprise Mode\" if you want to still use Splitode without a Development Certificate.\nYou can verify if Splitode was signed with the entitlement by seeing if it's visible in an app like StikDebug.";
 "jitless.cert.success" = "Certificate Imported! Be sure to run the JIT-Less test first to ensure it works!";
-"jitless.enterprise.warning" = "This method requires reinstalling a patched version of Geometry Dash (Geode Helper) everytime you want to enable, disable, download, or update any mod or Geode itself. This method also requires at least 400 MB of storage.\nIt is recommended to obtain a Developer Certificate for Geode, as it provides a better experience, and does not require installing the Geode Helper every time. Also this method is experimental and may not work everytime, but it will be improved in future updates.\nWould you like to enable Enterprise Mode anyways?";
+"jitless.enterprise.warning" = "This method requires reinstalling a patched version of SplitGDPS (Splitode Helper) everytime you want to enable, disable, download, or update any mod or Splitode itself. This method also requires at least 400 MB of storage.\nIt is recommended to obtain a Developer Certificate for Splitode, as it provides a better experience, and does not require installing the Splitode Helper every time. Also this method is experimental and may not work everytime, but it will be improved in future updates.\nWould you like to enable Enterprise Mode anyways?";
 
 "advanced" = "Advanced";
 "advanced.dev-mode" = "Developer Mode";
 "advanced.use-tweak" = "Use Tweak instead of JIT";
-"advanced.use-tweak.warning" = "You will need to use the TrollStore (.tipa) version of the Geode Launcher to install & update Geode automatically, otherwise you will need to manually download Geode each time using Filza.";
+"advanced.use-tweak.warning" = "You will need to use the TrollStore (.tipa) version of the Splitode Launcher to install & update Splitode automatically, otherwise you will need to manually download Splitode each time using Filza.";
 "advanced.manual-reopen-jit" = "Manual reopen with JIT";
 "advanced.use-nightly" = "Use Nightly Release";
 "advanced.view-recent-logs" = "View Last Game Logs";
@@ -189,12 +189,12 @@
 
 "about" = "About";
 "about.launcher" = "Splitode iOS";
-"about.geode" = "Geode";
+"about.Splitode" = "Splitode";
 "about.geometry-dash" = "SplitGDPS";
 "about.device" = "Device";
 
 "credits" = "Credits";
-"credits.footer" = "These people made Geode on iOS possible!";
+"credits.footer" = "These people made Splitode on iOS possible!";
 
 "developer" = "Developer";
 "developer.warning.title" = "Are you sure you want to enable Developer Mode?";
