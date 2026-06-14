@@ -495,7 +495,7 @@
 			<string>Editor</string>
 			<key>LSItemContentTypes</key>
 			<array>
-				<string>com.splitgdps.splitode.mod</string>
+				<string>com.geode.launcher.mod</string>
 			</array>
 		</dict>
 	</array>
@@ -505,7 +505,7 @@
 			<key>UTTypeDescription</key>
 			<string>Geode Mod</string>
 			<key>UTTypeIdentifier</key>
-			<string>com.splitgdps.splitode.mod</string>
+			<string>com.geode.launcher.mod</string>
 			<key>UTTypeConformsTo</key>
 			<array>
 				<string>public.data</string>
