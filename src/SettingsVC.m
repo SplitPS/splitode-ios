@@ -401,11 +401,7 @@ extern NSString *lcAppUrlScheme;
 			control.selectedSegmentIndex = [[Utils getPrefs] integerForKey:@"CURRENT_THEME"];
 			[control addTarget:self action:@selector(themeSelected:) forControlEvents:UIControlEventValueChanged];
 		}],
-		[Setting simpleCreate:@"general.change-icon".loc type:SettingTypeButtonWithIcon action:^{
-			IconViewController* IconVC = [[IconViewController alloc] init];
-			IconVC.root = _root;
-			[[self navigationController] pushViewController:IconVC animated:YES];
-		} custom:nil],
+
 		[Setting simpleCreate:@"general.open-fm".loc type:SettingTypeButton action:^{
 			NSString* openURL;
 			if (![Utils isSandboxed]) {
@@ -1174,8 +1170,7 @@ extern NSString *lcAppUrlScheme;
 				infoDict[@"NSCameraUsageDescription"] = @"A mod you are using is requesting this permission.";
 				[infoDict writeToFile:infoPath atomically:YES];
 			}
-			NSString* docPath = [fm URLsForDirectory:NSDocumentDirectory inDomains:NSUserDomainMask].lastObject.path;
-			NSString* tweakPath = [NSString stringWithFormat:@"%@/Tweaks/Geode.ios.dylib", docPath];
+			NSString* tweakPath = [[LCPath tweakPath] URLByAppendingPathComponent:@"Geode.ios.dylib"].path;
 			NSString* tweakBundlePath = [bundlePath URLByAppendingPathComponent:@"Geode.ios.dylib"].path;
 			if ([fm fileExistsAtPath:tweakBundlePath]) {
 				NSError* removeError;
@@ -1409,20 +1404,11 @@ extern NSString *lcAppUrlScheme;
 	case 15:
 		[Utils toggleKey:@"DONT_PATCH_SAFEMODE"];
 		break;
-	case 16: {
+		case 16: {
 		if ([sender isOn]) {
 			UIAlertController* alert = [UIAlertController alertControllerWithTitle:@"Warning" message:@"jitless.enterprise.warning".loc preferredStyle:UIAlertControllerStyleAlert];
 			UIAlertAction* okAction = [UIAlertAction actionWithTitle:@"Yes I do" style:UIAlertActionStyleDestructive handler:^(UIAlertAction* _Nonnull action) {
 				[Utils toggleKey:@"ENTERPRISE_MODE"];
-				[[UIApplication sharedApplication] setAlternateIconName:@"Pride" completionHandler:^(NSError* _Nullable error) {
-					if (error) {
-						AppLog(@"Failed to set alternate icon: %@", error);
-					} else {
-						AppLog(@"Icon set successfully.");
-					}
-				}];
-				[[Utils getPrefs] setValue:@"Pride" forKey:@"CURRENT_ICON"];
-				[_root updateLogoImage:2];
 				[self.tableView reloadData];
 			}];
 			UIAlertAction* cancelAction = [UIAlertAction actionWithTitle:@"Cancel" style:UIAlertActionStyleCancel handler:nil];

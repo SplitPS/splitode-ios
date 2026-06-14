@@ -394,8 +394,7 @@ typedef void (^DecompressCompletion)(NSError* _Nullable error);
 			});
 		}];
 	} else {
-		NSString* docPath = [fm URLsForDirectory:NSDocumentDirectory inDomains:NSUserDomainMask].lastObject.path;
-		NSString* tweakPath = [NSString stringWithFormat:@"%@/Tweaks/Geode.ios.dylib", docPath];
+		NSString* tweakPath = [[LCPath tweakPath] URLByAppendingPathComponent:@"Geode.ios.dylib"].path;
 		if (![Utils isSandboxed]) {
 			NSString* applicationSupportDirectory = [[Utils getGDDocPath] stringByAppendingString:@"Library/Application Support"];
 			if (applicationSupportDirectory != nil) {

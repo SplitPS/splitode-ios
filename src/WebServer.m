@@ -155,9 +155,8 @@ extern NSBundle* gcMainBundle;
 								   fails++;
 								   continue;
 							   }
-							   AppLog(@"[Server] Getting Geode dylib path...");
-							   NSString* docPath = [fm URLsForDirectory:NSDocumentDirectory inDomains:NSUserDomainMask].lastObject.path;
-							   NSString* tweakPath = [NSString stringWithFormat:@"%@/Tweaks/Geode.ios.dylib", docPath];
+							AppLog(@"[Server] Getting Geode dylib path...");
+							   NSString* tweakPath = [[LCPath tweakPath] URLByAppendingPathComponent:@"Geode.ios.dylib"].path;
 							   if (![Utils isSandboxed]) {
 								   NSString* applicationSupportDirectory = [[Utils getGDDocPath] stringByAppendingString:@"Library/Application Support"];
 								   if (applicationSupportDirectory != nil) {

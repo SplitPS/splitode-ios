@@ -699,12 +699,6 @@ extern SecTaskRef SecTaskCreateFromSelf(CFAllocatorRef allocator) __attribute__(
 	}
 	return completionHandler(YES, @"Success");
 }
-+ (BOOL)isSapphireDay {
-	NSDate *now = [NSDate date];
-	NSCalendar *cal = [NSCalendar currentCalendar];
-	NSDateComponents *c = [cal components:(NSCalendarUnitYear | NSCalendarUnitMonth | NSCalendarUnitDay) fromDate:now];
-	return (c.year == 2026 && c.month == 4 && c.day == 1);
-}
 @end
 
 @implementation CompareSemVer
