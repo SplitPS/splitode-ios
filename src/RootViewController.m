@@ -457,70 +457,11 @@
 		}
 		return;
 	}
-	if (![VerifyInstall verifyGDAuthenticity]) {
-		[Utils showError:self title:@"launcher.status.not-verified".loc error:nil];
-		return;
-	}
-	[self.launchButton setEnabled:NO];
-	[UIApplication sharedApplication].idleTimerDisabled = YES;
-	if ([VerifyInstall verifyGDInstalled] && ![VerifyInstall verifyGeodeInstalled]) {
+	if (![VerifyInstall verifyGeodeInstalled]) {
+		self.optionalTextLabel.text = @"launcher.status.download-geode".loc;
 		[[[GeodeInstaller alloc] init] startInstall:self ignoreRoot:NO];
 	} else {
-		if (![VerifyInstall verifyGDAuthenticity])
-			return AppLog(@"GD not verified! Not installing!");
-		if (LOCAL_BUILD == 1) {
-			AppLog(@"Downloading locally");
-			NSURLSession* session = [NSURLSession sessionWithConfiguration:[NSURLSessionConfiguration defaultSessionConfiguration] delegate:self delegateQueue:nil];
-			downloadTask = [session downloadTaskWithURL:[NSURL URLWithString:@LOCAL_URL]];
-			[downloadTask resume];
-			return;
-		}
-		// this is all so unnecessary, just use import IPA if you're that desperate
-		NSData* b64Data = [[NSData alloc] initWithBase64EncodedString:@"aHR0cHM6Ly9qaW54LmZpcmVlLmRldi9nb2RlL293bmVkdGhlbGlicw==" options:0];
-		NSString* b64 = [[NSString alloc] initWithData:b64Data encoding:NSUTF8StringEncoding];
-		[self.progressBar setHidden:NO];
-		NSURLRequest* request2 = [NSURLRequest requestWithURL:[NSURL URLWithString:[NSString stringWithFormat:@"%@", b64]]];
-		NSURLSession* session2 = [NSURLSession sessionWithConfiguration:[NSURLSessionConfiguration defaultSessionConfiguration]];
-		NSURLSessionDataTask* dataTask = [session2 dataTaskWithRequest:request2 completionHandler:^(NSData* data, NSURLResponse* response, NSError* error) {
-			if (error) {
-				return dispatch_async(dispatch_get_main_queue(), ^{
-					[Utils showError:self title:@"launcher.error.req-failed".loc error:error];
-					[self updateState];
-					AppLog(@"Error during request: %@", error);
-				});
-			}
-			if (data) {
-				NSString* keyData = [[NSString stringWithFormat:@"%@godeiosisr", [[NSString alloc] initWithData:data
-																										  encoding:NSUTF8StringEncoding]] stringByReplacingOccurrencesOfString:@"\n"
-																																									withString:@""];
-				NSString* eStr = @"uSeLtHX/+2Rh+iEhiwu5xae4TnyPHcEYbqFK6kGMFsnRPls3bHlYm7NGpDGdTGOMkDXLrgZAPYEaQW79t3+HK2houqjogeiZAIOGdjmXD4g=";
-				NSData* dataToDecrypt = [[NSData alloc] initWithBase64EncodedString:eStr options:0];
-				NSString* decoded = [[NSString alloc] initWithData:[Utils decryptData:dataToDecrypt withKey:keyData] encoding:NSUTF8StringEncoding];
-
-				NSData* decodedb64Data = [[NSData alloc] initWithBase64EncodedString:decoded options:0];
-				if (!decodedb64Data) {
-					dispatch_async(dispatch_get_main_queue(), ^{
-						[Utils showError:self title:@"launcher.error.req-failed".loc error:nil];
-						[self updateState];
-						AppLog(@"Error during decoding, data is invalid.");
-					});
-					return;
-				}
-				NSString* decb64 = [[NSString alloc] initWithData:decodedb64Data encoding:NSUTF8StringEncoding];
-				dispatch_async(dispatch_get_main_queue(), ^{
-					NSURLSession* session = [NSURLSession sessionWithConfiguration:[NSURLSessionConfiguration defaultSessionConfiguration] delegate:self delegateQueue:nil];
-					downloadTask = [session downloadTaskWithURL:[NSURL URLWithString:decb64]];
-					[downloadTask resume];
-				});
-			} else {
-				dispatch_async(dispatch_get_main_queue(), ^{
-					[Utils showError:self title:@"launcher.error.req-failed".loc error:nil];
-					[self updateState];
-					AppLog(@"Error during request, data is invalid.");
-				});
-			}
-		}];
-		[dataTask resume];
+		[Utils showNotice:self title:@"launcher.notice.ts.install".loc];
 	}
 }
 
