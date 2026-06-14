@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>CFBundleDisplayName</key>
-	<string>Geode</string>
+	<string>Splitode</string>
 	<key>CFBundleName</key>
 	<string>Geode</string>
 	<key>CFBundleExecutable</key>
@@ -23,8 +23,6 @@
 			<key>CFBundleIconFiles</key>
 			<array>
 				<string>AppIcon20x20</string>
-				<string>AppIcon40x40</string>
-				<string>AppIcon60x60</string>
 			</array>
 			<key>UIPrerenderedIcon</key>
 			<true/>
@@ -36,8 +34,6 @@
 				<key>CFBundleIconFiles</key>
 				<array>
 					<string>GeodeIcon20x20</string>
-					<string>GeodeIcon40x40</string>
-					<string>GeodeIcon60x60</string>
 				</array>
 				<key>UIPrerenderedIcon</key>
 				<true/>
@@ -302,7 +298,7 @@
 		</dict>
 	</dict>
 	<key>CFBundleIdentifier</key>
-	<string>com.geode.launcher</string>
+	<string>com.splitgdps.splitode</string>
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
 	<key>CFBundlePackageType</key>
@@ -424,10 +420,10 @@
 	<array>
 		<dict>
 			<key>CFBundleURLName</key>
-			<string>com.geode.launcher.urlscheme</string>
+			<string>com.splitgdps.splitode.urlscheme</string>
 			<key>CFBundleURLSchemes</key>
 			<array>
-				<string>geode</string>
+				<string>splitode</string>
 			</array>
 		</dict>
 	</array>
@@ -499,7 +495,7 @@
 			<string>Editor</string>
 			<key>LSItemContentTypes</key>
 			<array>
-				<string>com.geode.launcher.mod</string>
+				<string>com.splitgdps.splitode.mod</string>
 			</array>
 		</dict>
 	</array>
@@ -509,7 +505,7 @@
 			<key>UTTypeDescription</key>
 			<string>Geode Mod</string>
 			<key>UTTypeIdentifier</key>
-			<string>com.geode.launcher.mod</string>
+			<string>com.splitgdps.splitode.mod</string>
 			<key>UTTypeConformsTo</key>
 			<array>
 				<string>public.data</string>
