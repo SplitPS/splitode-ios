@@ -1,3 +1,5 @@
+# THIS DOES NOT WORK (yet)
+
 # Geode iOS Launcher
 Manages installing and launching **SplitGDPS** with **Geode** for iOS.
 
