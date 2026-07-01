@@ -1,0 +1,9 @@
+Package: com.tailsdrop.tweak
+Name: TailsDrop
+Version: 1.0.0
+Architecture: iphoneos-arm64
+Description: AirDrop-like file sharing over LAN
+Maintainer: TailsDrop
+Author: TailsDrop
+Section: Tweaks
+Depends: firmware (>= 15.0)

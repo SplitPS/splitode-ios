@@ -56,14 +56,29 @@ jobs:
         run: |
           git submodule update --init --recursive
           make package FINALPACKAGE=1 STRIP=0
-          make clean
-          make package FINALPACKAGE=1 STRIP=0 TROLLSTORE=1
 
-      - name: Upload artifact
+      - name: Upload IPA
         uses: actions/upload-artifact@main
         with:
           name: GeodeLauncher
-          path: packages/*.*
+          path: packages/*.ipa
+
+      - name: Upload DEB
+        uses: actions/upload-artifact@main
+        with:
+          name: TailsDrop
+          path: packages/*.deb
+
+      - name: Clean and build TrollStore
+        run: |
+          make clean
+          make package FINALPACKAGE=1 STRIP=0 TROLLSTORE=1
+
+      - name: Upload TrollStore IPA
+        uses: actions/upload-artifact@main
+        with:
+          name: GeodeLauncher-TrollStore
+          path: packages/*.tipa
   publish:
     name: Publish
     runs-on: ubuntu-latest
