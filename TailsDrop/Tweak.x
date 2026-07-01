@@ -69,3 +69,9 @@ static void insertTailsDropActivity(NSMutableArray *activities) {
 }
 
 %end
+
+%ctor {
+    if (NSClassFromString(@"UIActivityViewController")) {
+        %init;
+    }
+}
