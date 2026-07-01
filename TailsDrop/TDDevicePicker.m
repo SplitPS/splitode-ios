@@ -1,7 +1,8 @@
 #import <UIKit/UIKit.h>
 #import <QuartzCore/QuartzCore.h>
-#import "TDServiceBrowser.m"
-#import "TDSender.m"
+
+@class TDServiceBrowser;
+@class TDSender;
 
 @interface TDDevicePickerController : UIViewController <TDServiceBrowserDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout>
 @property (nonatomic, strong) NSArray *items;
